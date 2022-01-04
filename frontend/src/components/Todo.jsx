@@ -31,7 +31,7 @@ const Todo = ()=>{
               <h1>Todo List </h1>
           <br />
           </div>
-          <input 
+     <input 
            type="text" 
            placeholder="Add your work"
              onChange={listchange}                        /*state function that is used to add the list */
@@ -40,21 +40,19 @@ const Todo = ()=>{
             autoCorrect="off"
             autoCapitalize="off"
             spellCheck="false" />
-          <button className="add" onClick={makelist}>+</button>
-      </div>
-       <div className="content_div">  
-       {addlist.map((listval) => {    
-         return(       
-         <div className="mainContent">
-                <div className="realText"> {listval} </div>
-
-         </div>       
+      <button className="add" onClick={makelist}>+</button>
+            <div className="content_div">  
+              {addlist.map((listval) => {    
+                return(       
+                 <div className="mainContent">
+                 <div className="realText"> {listval} </div>
+            </div>       
          );
        })}   
       </div>
       </div>
 
-
+</div>
 
         </>
     )
