@@ -15,6 +15,7 @@ const Todo = ()=>{
     setaddlist((oldlist) =>{
       return[...oldlist,inputlist];
     });
+    setinputlist("");
   };
 
 
@@ -34,7 +35,8 @@ const Todo = ()=>{
      <input 
            type="text" 
            placeholder="Add your work"
-             onChange={listchange}                        /*state function that is used to add the list */
+           value={inputlist}
+            onChange={listchange}                        /*state function that is used to add the list */
             autoFocus="on"
             autoComplete="off"
             autoCorrect="off"
@@ -45,7 +47,7 @@ const Todo = ()=>{
               {addlist.map((listval) => {    
                 return(       
                  <div className="mainContent">
-                 <div className="realText"> {listval} </div>
+                 <div className="realText">{listval} </div>
                  <div className="task">
                      <i className="far fa-edit"></i>
                      <i className="far fa-trash-alt" ></i>
