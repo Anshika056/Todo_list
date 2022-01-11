@@ -16,7 +16,7 @@ const todos=require("../backend/models/todoSchema");            //models
 
 
 
-app.use("/api",todoroutes);
+app.use("/api",todoroutes);                                     //calling the routes
 
  app.listen(PORT,() => {
      console.log(`server is running at ${PORT}`);

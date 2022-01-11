@@ -43,9 +43,9 @@ const Todo = ()=>{
             autoCapitalize="off"
             spellCheck="false" />
       <button className="add" onClick={makelist}>+</button>
-            <div className="content_div">  
-              {addlist.map((listval) => {    
-                return(       
+            <div className="content_div">   
+              {addlist.map((listval) => {                   //adding all the data inputted in the list in a array and showing in the list place
+                return(                                    //returns the data in the list columns
                  <div className="mainContent">
                  <div className="realText">{listval} </div>
                  <div className="task">
