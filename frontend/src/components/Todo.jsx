@@ -6,11 +6,12 @@ const Todo = ()=>{
   const[ inputlist, setinputlist] = useState("")             //change the state of the todo input 
   const[ addlist ,setaddlist ] = useState([])
 
+  
   const listchange = (event) => {                          
     setinputlist(event.target.value); 
     console.log(setinputlist);   
   }
-
+  
   const makelist = () =>{
     setaddlist((oldlist) =>{
       return[...oldlist,inputlist];

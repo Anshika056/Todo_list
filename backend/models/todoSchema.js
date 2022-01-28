@@ -1,7 +1,11 @@
 const mongoose = require("mongoose");
 
 const todo = mongoose.Schema({
-    content:"string"
+    content:{
+        type:String,
+        required:true,
+    }
+
 },{timestamps:true});
 
 
